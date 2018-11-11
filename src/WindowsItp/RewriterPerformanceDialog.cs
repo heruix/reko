@@ -1,4 +1,4 @@
-﻿using Reko.Arch.Arm;
+using Reko.Arch.Arm;
 using Reko.Arch.Arm.AArch32;
 using Reko.Core;
 using Reko.Core.Expressions;
@@ -22,7 +22,7 @@ namespace Reko.WindowsItp
             InitializeComponent();
         }
 
-        private class RewriterHost : IRewriterHost
+        public class RewriterHost : IRewriterHost
         {
             private Dictionary<string, PseudoProcedure> ppp;
             private Dictionary<Address, ImportReference> importThunks;

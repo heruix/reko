@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /* 
  * Copyright (C) 1999-2018 John Källén.
  *
@@ -1350,6 +1350,14 @@ namespace Reko.UnitTests.Arch.Arm
         {
             Disassemble32(0x01262B70);
             Expect_Code("bkpteq\t#&62B0");
+        }
+
+        [Test]
+        [Ignore("Make this work")]
+        public void ArmDasm_f2c14e3e()
+        {
+            Disassemble32(0xF2C14E3E);
+            Expect_Code("@@@");
         }
 
         /// If you're bored and want something to do, why not implement a 
